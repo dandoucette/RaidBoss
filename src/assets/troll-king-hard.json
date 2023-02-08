@@ -1,0 +1,82 @@
+[
+    { 
+        "dice": [1],
+        "text": "All players discard 1 card, mill 1 card, and sacrifice a creature, enchantment, or artifact"
+    },
+    {
+        "dice": [2],
+        "text": "Naturalize: each player sacrifices an enchantment or artifact"
+    },
+    {
+        "dice": [3],
+        "text": "Doom Blade: each player sacrifices a non-black creature"
+    },
+    {
+        "dice": [4],
+        "text": "Lightning Bolt: each player chooses a target they control to receive 3 damage"
+    },
+    {
+        "dice": [5],
+        "text": "Hurricane: all flying creatures controlled by players and players receive {x} damage"
+    },
+    {
+        "dice": [6],
+        "text": "Black Sun Zenith: All players but {x} -1/-1 counters on creatures they control"
+    },
+    {
+        "dice": [7],
+        "text": "Earthquake: all non-flying creatures controlled by players and players receive {x} damage"
+    },
+    {
+        "dice": [8],
+        "text": "Dark Deal: all players discards all the cards in their hand and draws that many cards minus 1"
+    },
+    {
+        "dice": [9],
+        "text": "Desert Twister: each player sacrifices one permanent"
+    },
+    {
+        "dice": [10],
+        "text": "Fireball: all players take {x*3) damage"
+    },
+    {
+        "dice": [11],
+        "text": "Drain Life: all players take {x} damage and troll king gains {xp} life"
+    },
+    {
+        "dice": [12],
+        "text": "Stream of life: troll king gains {x*3} life"
+    },
+    {
+        "dice": [13],
+        "text": "Cinder Wall: Troll King casts {x} Cinder walls, they are 3/3 defenders that are destroyed at the end of combat if they block"
+    },
+    {
+        "dice": [14],
+        "text": "Blood Artist: Troll King casts blood artist, a 0/1 creature with this ability: whenever any creature dies all players lose 1 life and Troll King gains 1 life"
+    },
+    {
+        "dice": [15],
+        "text": "Ball Lightning: Troll King casts a Ball Lightning for each player and attacks. Ball Lightning is a 6/1 creature with trample."
+    },
+    {
+        "dice": [16],
+        "text": "Return to Nature: each player must sacrifice an artifact, an enchantment, or exile a card from a graveyard"
+    },
+    {
+        "dice": [17],
+        "text": "Sign in Blood: each player draws 2 cards and loses 2 life"
+    },
+    {
+        "dice": [18],
+        "text": "Chain Reaction: deals X damage to each creature where X is the number of creatures on the battlefied"
+    },
+    {
+        "dice": [19],
+        "text": "Fog: creatures deal no combat damage next turn"
+    },
+    {
+        "dice": [20],
+        "text": "Each player may draw a card OR play an extra land OR gain 5 life"
+    }
+]

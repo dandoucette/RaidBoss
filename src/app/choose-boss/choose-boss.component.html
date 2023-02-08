@@ -1,0 +1,25 @@
+
+<div class="row">
+    <div class="col-12">
+        <h1>Choose Your Boss</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <app-boss [bossId]="bosses[0].id"
+                  [bossName]="bosses[0].name"
+                  [bossSubtitle]="bosses[0].subtitle"
+                  [description]="bosses[0].description"
+                  [imagePath]="bosses[0].imagePath"
+                  [colours]="bosses[0].colours"
+                  (difficultySelected)="choose($event)"></app-boss>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+</div>
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+</div>

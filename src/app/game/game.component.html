@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-2">Number of players</div>
+    <div class="col-1">
+        <input type="number" class="numeric" value="1" min="1" max="7" />
+    </div>
+</div>
+<div class="row margin-top-20">
+    <div class="col-12 header center">
+        Turn {{ turnCounter }}
+        <hr />
+    </div>
+</div>
+<div class="row">   
+    <div class="col-2">
+        Enter damage done to boss
+    </div>
+    <div class="col-2">
+        <input type="number" class="numeric" value="0" min="0" max="1000000" />
+    </div>
+</div>
+<div class="col-2">
+    <button (click)="nextTurnClick()">Activate Boss Turn</button>
+</div>
