@@ -10,6 +10,7 @@ import { ChooseBossComponent } from './choose-boss/choose-boss.component';
 import { BossComponent } from './choose-boss/boss/boss.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GameComponent } from './game/game.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GameComponent } from './game/game.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

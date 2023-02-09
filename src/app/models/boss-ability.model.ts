@@ -1,4 +1,5 @@
 export interface BossAbility {
-    dice: number[]
-    text: string
+    dice: number[];
+    bossEffect: string;
+    text: string;
 }

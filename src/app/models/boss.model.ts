@@ -5,4 +5,5 @@ export interface Boss {
     description: string;
     imagePath: string;
     colours: string[];
+    hitPoints: number[];
 }

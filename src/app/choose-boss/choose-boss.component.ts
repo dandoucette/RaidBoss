@@ -19,7 +19,8 @@ export class ChooseBossComponent implements OnInit {
       subtitle: "I've never seen such a creature, it must be 50 feet tall",
       description: "Death, destruction, and healing. You will need to fight as a team to take down the Troll King",
       imagePath: "../../assets/TrollKing.jpg",
-      colours: ["Red", "Green", "Black"]
+      colours: ["Red", "Green", "Black"],
+      hitPoints: [20, 25, 40]
     }
     
     this.bosses.push(boss);
@@ -32,7 +33,7 @@ export class ChooseBossComponent implements OnInit {
     //   (abilities: BossAbility[]) => {
     //     console.log(abilities);
     //   });
-    this.router.navigate(['/game', { file: valueEmitted}]);
+    this.router.navigate(['/game', { file: valueEmitted, name: "Troll King", hitPoints: 40}]);
   }
 
 }
