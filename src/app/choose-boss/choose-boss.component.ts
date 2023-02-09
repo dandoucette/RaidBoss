@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Boss } from '../models/boss.model';
+import { BossService } from '../services/boss.service';
 
 @Component({
   selector: 'app-choose-boss',
@@ -9,21 +10,38 @@ import { Boss } from '../models/boss.model';
 })
 export class ChooseBossComponent implements OnInit {
   bosses: Boss[] = [];
+  bossRows: any[] = [];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private service: BossService) { }
 
   ngOnInit(): void {
-    const boss: Boss = {
-      id: "troll-king",
-      name: "Troll King",
-      subtitle: "I've never seen such a creature, it must be 50 feet tall",
-      description: "Death, destruction, and healing. You will need to fight as a team to take down the Troll King",
-      imagePath: "../../assets/TrollKing.jpg",
-      colours: ["Red", "Green", "Black"],
-      hitPoints: [20, 25, 40]
-    }
+    this.service.getBosses().subscribe(
+      (bosses: Boss[]) => {
+        this.bosses = bosses;
+
+        var row = [];
+        var columnCount = 1;
+        for (var i = 0; i < this.bosses.length; i++) {
+          if (columnCount % 3 == 0) {
+            this.bossRows.push(row);
+            row = [];
+          }
+          row.push(this.bosses[i]);
+          columnCount += 1
+        }
+        this.bossRows.push(row);
+      })
+    // const boss: Boss = {
+    //   id: "troll-king",
+    //   name: "Troll King",
+    //   subtitle: "I've never seen such a creature, it must be 50 feet tall",
+    //   description: "Death, destruction, and healing. You will need to fight as a team to take down the Troll King",
+    //   imagePath: "../../assets/TrollKing.jpg",
+    //   colours: ["Red", "Green", "Black"],
+    //   hitPoints: [20, 25, 40]
+    // }
     
-    this.bosses.push(boss);
+    // this.bosses.push(boss);
   }
 
   choose(valueEmitted: string) {

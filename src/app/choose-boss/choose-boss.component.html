@@ -5,21 +5,15 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="col-4">
-        <app-boss [bossId]="bosses[0].id"
-                  [bossName]="bosses[0].name"
-                  [bossSubtitle]="bosses[0].subtitle"
-                  [description]="bosses[0].description"
-                  [imagePath]="bosses[0].imagePath"
-                  [colours]="bosses[0].colours"
+<div class="row margin-top-20">
+    <div class="col-4" *ngFor="let boss of bosses">
+        <app-boss [bossId]="boss.id"
+                  [bossName]="boss.name"
+                  [bossSubtitle]="boss.subtitle"
+                  [description]="boss.description"
+                  [imagePath]="boss.imagePath"
+                  [colours]="boss.colours"
                   (difficultySelected)="choose($event)"></app-boss>
     </div>
-    <div class="col-4"></div>
-    <div class="col-4"></div>
 </div>
-<div class="row">
-    <div class="col-4"></div>
-    <div class="col-4"></div>
-    <div class="col-4"></div>
-</div>
+
